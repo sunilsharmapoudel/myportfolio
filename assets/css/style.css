@@ -1,1 +1,145 @@
-style
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* VARIABLES CSS */
+
+:root {
+    /*  colors */
+    --hue-color:242;
+
+    /*===== Colors =====*/
+    --hue-color:242;
+
+    /* HSL Color Mode */
+    --skin-color: hsl(342, 92%, 46%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /*  .5rem=8px, 1rem= 16px, 1.5rem= 24px --- */
+    --biggest-font-size:3rem;
+    --h1-font-size:2.23rem;
+    --h2-font-size: 1.5rem;
+    --h3-fonts9ze: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*-- FONT WEIGHT  --*/
+    --mb-0-25: 500;
+    --font-bold: 600;
+
+    /*-- MArgines bottom */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: 1rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-3: 3rem;
+
+
+    /*-- Z-Index --*/
+    --z-fixed: 10;
+    --z-modal: 100;
+}
+
+
+    /* RESPONSIVE TYPOGRAPHY */
+    @media screen and (max-width: 1024px){
+        :root{
+            --biggest-font-size: 2rem;
+            --h1-font-size: 1.5rem;
+            --h2-font-size: 1.25rem;
+            --h3-fonts9ze: 1.125rem;
+            --normal-font-size: .938rem;
+            --small-font-size: .813rem;
+            --smaller-font-size: .75rem;
+        }
+    }
+
+    /*-------- BASE -------*/
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body,
+    button,
+    input {
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+
+    }
+
+    body{
+        background-color: var(--body-color);
+        color: var(--text-color);
+    }
+
+    h1,h2,h3{
+        color: var(--title-color);
+        font-weight: var(--font-bold);
+    }
+    ul{
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,input{
+        border: none;
+        outline: none;
+    }
+
+
+
+    /*-------- LAYOUT -----*/
+
+
+    /*------- RESUABLE CSS CLASSES --------*/
+
+
+
+    /*------- SIDEBAR --------*/
+    .sidebar {
+        position: fixed;
+        width: 100px;
+        height: 100vh;
+        background-color: var(--body-color);
+        border-right: 1px solid var(--box-color);
+    }
+
+    .nav_logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1.8rem;
+        width:  40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--skin-color);
+        text-align: center;
+    }
+
+
+
+
+    /*-- HOME SECTION --*/
+
+
+    /*-- BUTTONS --*/
+
+    /*-- ABOUT SECTION --*/
+
