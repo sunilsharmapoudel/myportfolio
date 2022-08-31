@@ -503,3 +503,85 @@ input {
     color: var(--skin-color);
 
 }
+
+/* -- Skills Section --*/
+.skills_container {
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills_header:not(:last-child) {
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills_icon, .skills_arrow {
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+
+.skills_icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+    font-size: var(--h3-fontsize);
+    font-weight: var(--font-medium);
+}
+
+.skills_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.skills_arrow {
+margin-left: auto;
+}
+
+.skills_active .skills_arrow {
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+.skills [data-content] {
+    display: none;
+}
+
+.skills_active[data-content] {
+    display:block;
+}
+
+.skills_list {
+    row-gap: 1.8rem;
+}
+
+.skills_titles {
+display: flex;
+justify-content: space-between;
+margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage {
+height: 5px;
+border-radius: .25rem;
+}
+
+.skills_bar {
+    background-color: var(--box-color);
+}
+
+.skills_percentage {
+    display: block;
+    background-color: var(--skin-color);
+}
