@@ -19,3 +19,24 @@ tabs.forEach(tab => {
         tab.classList.add('skills_active')
     })
 })
+
+/* -- MIXITUP FILTER PORTFOLIO -- */
+let mixerPortfolio = mixitup('.work_container', {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+/* -- Link Active Work --*/
+
+const linkWork = document.querySelectorAll('.work_item');
+
+function activeWork() {
+    linkWork.forEach(L=> IDBCursor.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(L=> L.addEventListener("click", activeWork))
