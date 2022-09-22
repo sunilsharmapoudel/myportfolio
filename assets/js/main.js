@@ -88,3 +88,24 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+// Swiper Testnimonial 
+let swiper = new Swiper(".testimonials_container", {
+  spaceBetween: 25,
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
