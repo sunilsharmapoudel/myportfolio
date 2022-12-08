@@ -1,7 +1,8 @@
 /* -- SHOW SIDEBAR --*/
 const navMenu = document.getElementById('sidebar'),
 navToggle = document.getElementById('nav-toggle'),
-navClose = document.getElementById('nav-close')
+navClose = document.getElementById('nav-close');
+navaClose = document.getElementsByClassName('nav_link')
 
 /* Sidebar Show */
 /* Validate if const exists */
@@ -11,6 +12,18 @@ if(navToggle) {
         navMenu.classList.add('show-sidebar')
     })
 }
+
+
+
+for(var i = 0, x = navaClose.length; i < x; i++) {
+    navaClose[i].onclick = function(){
+        
+        navMenu.classList.remove('show-sidebar')
+        
+    }
+}
+
+
 
 /* Sidebar Hidden */
 /**Validate if consts exists */
@@ -54,19 +67,6 @@ let mixerPortfolio = mixitup('.work_container', {
     }
 });
 
-/* -- Link Active Work --*/
-
-
-/* 
-const linkWork = document.querySelectorAll('.work_item');
-
-function activeWork() {
-    linkWork.forEach(l=> I.Cursor.classList.remove('active-work'))
-    this.classList.add('active-work')
-}
-
-linkWork.forEach(l=> I.addEventListener("click", activeWork));
- */
 
 
 /*-- Work Popup --*/
